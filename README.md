@@ -1,80 +1,78 @@
-🎓 Bachelor Professional IT - Lernmaterial & AI-Workflow
-========================================================
+🎓 Bachelor Professional IT - Lernkarten Sammlung
+=================================================
 
-Dieses Repository ist eine zentrale Anlaufstelle für Studierende zum **Bachelor Professional IT (IHK)**. Ziel ist es, die Prüfungsvorbereitung effizienter zu gestalten, indem wir hochwertiges Lernmaterial teilen und moderne KI-Tools nutzen, um komplexe Themen verständlich aufzubereiten.
+Dieses Repository ist eine einfache Sammlung von Lernmaterialien für den **Bachelor Professional IT (IHK)**. Die Idee dahinter: Wir teilen unsere Karteikarten und Workflows, damit nicht jeder das Rad neu erfinden muss und wir alle Zeit und Energie sparen.
 
-Hier geht es nicht darum, ganze Skripte stumpf zu kopieren, sondern gezielt die Themen herauszufiltern, die wirklich prüfungsrelevant und lernenswert sind -- **Klasse statt Masse**.
+Es geht hier nicht um Masse, sondern um Qualität. Ziel ist es, gezielt wichtige Themen aufzubereiten, anstatt einfach nur ganze Skripte zu kopieren.
 
-📂 Struktur des Repositories
-----------------------------
+📂 Was findest du hier?
+-----------------------
 
--   **`ITM/` & `OuP/`**: Themenspezifische Karteikarten (CSV-Format) für Bereiche wie IT-Management sowie Organisation und Personalentwicklung.
+-   **`ITM/` & `OuP/`**: Themenspezifische Karteikarten (CSV-Format), die du direkt in Anki importieren kannst.
 
--   **`flashCardsTemp/`**: Enthält das Design für deine Anki-Karten (`front.html`, `back.html` und `style.css`), damit die Karten auf allen Geräten übersichtlich und professionell aussehen.
+-   **`flashCardsTemp/`**: Ein einfaches HTML/CSS-Design, damit die Karten in Anki sauber und einheitlich aussehen.
 
 -   **`Promts/`**:
 
-    -   `NootbookLMPromt.md`: Optimiert für Google NotebookLM, um aus langen Skripten prägnante Zusammenfassungen einzelner Themen zu erstellen.
+    -   `NootbookLMPromt.md`: Um gezielt Zusammenfassungen von einzelnen Themen aus Skripten zu erstellen.
 
-    -   `GoogleGemPromt.md`: Ein spezieller Prompt für Google Gemini, um aus diesen Zusammenfassungen hochwertige, logisch strukturierte Karteikarten zu generieren.
+    -   `GoogleGemPromt.md`: Um aus diesen Infos hochwertige Karteikarten im richtigen Format zu generieren.
 
 * * * * *
 
-⚙️ Einrichtung & Konfiguration
-------------------------------
+⚙️ So stellst du alles ein
+--------------------------
 
-### 1\. Anki Design anlegen
+### 1\. Anki Design (Template)
 
-Damit die Karten korrekt angezeigt werden, musst du einmalig den Notiztyp in Anki anpassen:
+Damit das Layout passt, musst du den Notiztyp in Anki einmalig anlegen:
 
-1.  Öffne Anki: `Werkzeuge` -> `Notiztypen verwalten` -> `Hinzufügen`.
+1.  Gehe in Anki auf **Werkzeuge** -> **Notiztypen verwalten** -> **Hinzufügen**.
 
-2.  Wähle "Einfach" als Vorlage und nenne ihn `BachelorProIT`.
+2.  Wähle "Einfach" und nenne ihn z.B. `BachelorProIT`.
 
-3.  Klicke auf `Karten...` und kopiere die Inhalte aus dem Ordner `flashCardsTemp/`:
+3.  Klicke auf **Karten...** und kopiere die Inhalte aus dem Ordner `flashCardsTemp/` in die Felder:
 
-    -   Inhalt von `front.html` in das Feld **Vorderseite**.
+    -   `front.html` -> **Vorderseite**
 
-    -   Inhalt von `back.html` in das Feld **Rückseite**.
+    -   `back.html` -> **Rückseite**
 
-    -   Inhalt von `style.css` in das Feld **Formatierung**.
+    -   `style.css` -> **Formatierung**
 
 ### 2\. Karten importieren
 
-1.  Wähle in der Anki-Hauptansicht `Datei` -> `Importieren`.
+1.  Klicke in Anki auf **Datei** -> **Importieren**.
 
-2.  Wähle eine CSV-Datei (z.B. aus `ITM/`).
+2.  Wähle eine CSV-Datei aus dem Repo aus.
 
-3.  Stelle sicher, dass als Trennzeichen das Pipe-Symbol (`|`) ausgewählt ist und der Notiztyp auf `BachelorProIT` steht.
-
-* * * * *
-
-🚀 Workflow: Gezielte Erstellung hochwertiger Karten
-----------------------------------------------------
-
-Der Fokus liegt auf der Erarbeitung einzelner, komplexer Themenbereiche. Wir wollen keine "Daten-Müllhalde", sondern Karten, die das Verständnis fördern.
-
-1.  **Thema auswählen:** Identifiziere ein spezifisches Thema im IHK-Skript, das du vertiefen möchtest.
-
-2.  **Zusammenfassung (NotebookLM):** Nutze den Prompt aus `Promts/NootbookLMPromt.md`, um das Thema kompakt auf den Punkt zu bringen.
-
-3.  **Karten generieren (Gemini):** Kopiere die Zusammenfassung in Google Gemini zusammen mit dem Prompt aus `Promts/GoogleGemPromt.md`. Die KI erstellt dir daraus präzise Karteikarten, die genau die Kernpunkte treffen.
-
-4.  **Qualitätscheck:** Lies die generierten Karten kurz durch. Nur was wirklich sinnvoll ist, wandert in dein Anki-Deck.
+3.  Wichtig: Wähle als Trennzeichen das Pipe-Symbol (`|`) und nutze den oben erstellen Notiztyp `BachelorProIT`.
 
 * * * * *
 
-🤝 Mitmachen & Beitragen
-------------------------
+🚀 Der Workflow: Qualität statt Masse
+-------------------------------------
 
-Dieses Studium ist fordernd genug -- wenn wir unsere Ressourcen bündeln, sparen wir alle Zeit und Energie.
+Wir nutzen KI, um gezielt Themen zu erarbeiten, nicht um blind Texte zu kopieren.
 
--   **Committen:** Wenn du für ein Thema gute Karten erstellt hast, füge sie dem Repo hinzu.
+1.  **Thema wählen:** Such dir ein Thema aus dem Skript, das wirklich wichtig ist.
 
--   **Verbessern:** Findest du Fehler in bestehenden CSVs oder hast einen besseren Prompt? Erstelle einen Pull-Request.
+2.  **Zusammenfassen:** Mit dem Prompt aus `Promts/NootbookLMPromt.md` erstellst du in NotebookLM eine kurze, knackige Zusammenfassung des Themas.
 
--   **Teilen:** Je mehr Leute mitmachen, desto lückenloser wird unsere Vorbereitung.
+3.  **Karten erstellen:** Den Text kopierst du zusammen mit dem Prompt aus `Promts/GoogleGemPromt.md` in Google Gemini. Du erhältst fertige Karten für den Import.
 
-Lasst uns gemeinsam dafür sorgen, dass wir mit top Lernmaterial in die Prüfungen gehen!
+4.  **Check:** Kurz drüberschauen, ob alles passt, und ab in Anki.
 
 * * * * *
+
+🤝 Mitmachen
+------------
+
+Das Ganze funktioniert am besten, wenn wir uns gegenseitig unterstützen. Wenn du für ein Thema gute Karten erstellt hast, lade sie hier hoch.
+
+-   **Korrigieren:** Fehler gefunden? Einfach korrigieren und commiten.
+
+-   **Erweitern:** Neue Themen-CSVs hinzufügen.
+
+-   **Verbessern:** Wenn du die Prompts oder das Design optimiert hast, lass es alle wissen.
+
+Wenn alle mitmachen, haben wir am Ende eine top Vorbereitung für die Prüfung und sparen uns das nervige Abtippen. Viel Erfolg beim Lernen!
