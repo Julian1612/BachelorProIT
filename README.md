@@ -62,7 +62,7 @@ Damit das Layout funktioniert, muss der Notiztyp exakt so konfiguriert sein:
 
 ---
 
-## 🚀 Der Workflow: Klasse statt Masse
+## 🚀 Karten erstellen
 
 1. **Zusammenfassen:** Nutze den Prompt aus `Promts/NootbookLMPromt.md`.
 2. **Karten erstellen:** Nutze den Prompt aus `Promts/GoogleGemPromt.md`.
