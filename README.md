@@ -85,4 +85,3 @@ Dieses Repo lebt davon, dass wir uns helfen.
 * **Korrigieren:** Fehler gefunden? Fix ihn direkt im Repo.
 * **Optimieren:** Bessere Prompts oder Design-Ideen? Her damit!
 
-Viel Erfolg bei der Prüfungsvorbereitung!
